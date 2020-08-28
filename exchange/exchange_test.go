@@ -589,7 +589,7 @@ func TestBidResponseCurrency(t *testing.T) {
 // Its primary goal is to catch race conditions, since parts of the BidRequest passed into MakeBids()
 // are shared across many goroutines.
 //
-// The "known" file names right now are "banner.json" and "video.json". These files should hold params
+// The "known" file names right now are "missing_siteid.json" and "video.json". These files should hold params
 // which the Bidder would expect on banner or video Imps, respectively.
 func TestRaceIntegration(t *testing.T) {
 	noBidServer := func(w http.ResponseWriter, r *http.Request) {
